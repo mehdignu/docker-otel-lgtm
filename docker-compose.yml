@@ -25,6 +25,9 @@ services:
     image: grafana/loki:2.9.10
     ports:
       - "3100:3100"
+    command: [ "-config.file=/tmp/loki.yml" ]
+    volumes:
+      - ./loki.yml:/tmp/loki.yml
     environment:
       - LOKI_ENABLE_API=true
 
