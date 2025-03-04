@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: mehdgu/lgtm
+    image: mehdignu/lgtm
     build: .
     command: npm run index-with-tracer
     ports:
